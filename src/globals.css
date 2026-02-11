@@ -1,0 +1,60 @@
+@import "tw-animate-css";
+@import "tailwindcss";
+
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --color-dark-1: #0e1214;
+  --color-dark-2: #13191c;
+  --color-dark-3: #141b1f;
+  --color-dark-4: #182329;
+
+}
+
+
+@layer components{
+  .paddings {
+    @apply px-6 pb-10 pt-28 max-md:pb-32 sm:px-10;
+  }
+
+  .main-container {
+    @apply flex min-h-screen flex-1 flex-col bg-dark-1 text-white font-sans p-0;
+  }
+
+  .navbar {
+      @apply fixed top-0 z-30 h-18 flex w-full items-center justify-between bg-dark-4 px-6 py-3 text-white ;
+    }
+
+  .name {
+    @apply font-bold text-2xl  [text-shadow:0_0_30px_white];
+  }
+  .nav-links {
+    @apply text-white flex gap-6 font-medium hover:cursor-pointer;
+  }
+  .link {
+    @apply relative inline-block text-white decoration-0;
+    @apply hover:[text-shadow:0_0_30px_#FFFFFF];
+  }
+  .link::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 block w-0 h-0.5 bg-white;
+    @apply transition-all duration-300 ease-out;
+    @apply -translate-x-1/2; 
+  }
+  .link:hover::after {
+    @apply w-full;
+  }
+
+  .skills-container {
+    @apply bg-white rounded-full w-16 h-16 flex justify-center items-center  shadow-[0_0_10px_theme(--color-gray-300)]
+  } 
+}
+
+
+@layer utilities {
+  .icons {
+    @apply flex justify-center items-center bg-emerald-500 rounded-full w-11 h-11 p-0 text-white text-xl font-bold cursor-pointer hover:bg-emerald-600 transition-colors duration-300;
+  }
+  
+}
