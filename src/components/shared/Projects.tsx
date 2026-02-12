@@ -23,7 +23,7 @@ const Projects = () => {
               {/* Si no tienes imagen aún, usa un div de color o un placeholder */}
               <img 
                 src={project.image} 
-                alt={project.title} 
+                alt={t(project.title)} 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               
@@ -33,11 +33,11 @@ const Projects = () => {
             <div className="p-6 flex flex-col grow">
               
               <h3 className="text-xl font-bold mb-2 text-white">
-                {project.title}
+                {t(project.title)}
               </h3>
               
               <p className="text-gray-400 text-sm mb-4 line-clamp-3">
-                {project.description}
+                {t(project.description)}
               </p>
 
               <div className="flex flex-wrap gap-2 mb-6 mt-auto">
@@ -56,7 +56,7 @@ const Projects = () => {
                   href={project.githubUrl} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-black transition-colors"
+                  className="flex items-center gap-2 text-sm font-medium text-gray-400 hover:text-white transition-colors"
                 >
                   <img
                     className="invert"
@@ -65,7 +65,7 @@ const Projects = () => {
                     width={18}
                     height={18}
                     />
-                  Código
+                  {t("code")}
                 </a>
                 
                 {project.liveUrl && (
@@ -75,7 +75,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm font-medium text-emerald-500 hover:text-emerald-700 transition-colors ml-auto"
                   >
-                    Visit
+                    {t("live")}
                     <ExternalLink size={16} />
                   </a>
                 )}
