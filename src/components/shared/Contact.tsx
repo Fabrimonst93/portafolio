@@ -10,6 +10,9 @@ const Contact = () => {
     navigator.clipboard.writeText(text);
     toast.success(t("copied"));
   }
+  const handleLink = (url: string) => {
+    window.open(url, '_blank')
+  }
 
   return (
     <div id='contacts' className='flex flex-col gap-4 scroll-mt-24 paddings'>
@@ -23,7 +26,7 @@ const Contact = () => {
         {CONTACTS.map((contact) => (
           <div 
             key={contact.alt} 
-            onClick={() => handleCopy(contact.content)}
+            onClick={() => contact.alt.includes("LinkedIn") ? handleLink(contact.content) : handleCopy(contact.content)}
             className='flex gap-2 items-center cursor-pointer group hover:bg-white/5 p-3 rounded-lg transition-all active:scale-95 w-fit'
             title="Click para copiar"
           >

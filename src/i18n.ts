@@ -22,7 +22,7 @@ const resources = {
 
       myProjects: "My Projects",
       "projects.pp.title": "Personal Portfolio",
-      "projects.pp.description": "My personal website optimized for SEO and performance, with smooth animations.",
+      "projects.pp.description": "My personal website optimized for performance, with smooth animations.",
       
       "projects.sm.title": "Social Media App",
       "projects.sm.description": "A social media application that allows users to share posts, create communities, like and comment on posts, using Next.js and MongoDB.",
@@ -71,7 +71,7 @@ const resources = {
 
       myProjects: "Mis Proyectos",
       "projects.pp.title": "Portafolio Personal",
-      "projects.pp.description": "Mi sitio web personal optimizado para SEO y performance, con animaciones suaves.",
+      "projects.pp.description": "Mi sitio web personal optimizado para su performance, con animaciones suaves.",
       
       "projects.sm.title": "Aplicación de Red Social",
       "projects.sm.description": "Una aplicación de red social que permite a los usuarios compartir posts, crear comunidades, dar likes y comentar en publicaciones, utilizando Next.js y MongoDB.",

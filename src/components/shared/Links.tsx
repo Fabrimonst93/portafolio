@@ -13,7 +13,6 @@ const Links = () => {
 
   return (
     <div className="flex flex-row gap-4 my-14 ml-8">
-            <Button className="icons">Cv</Button>
             <a href="https://github.com/Fabrimonst93" target="_blank" rel="noopener noreferrer">
               <Button className="icons">
                 <img
