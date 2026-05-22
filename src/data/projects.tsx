@@ -32,4 +32,12 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/Fabrimonst93/Practica",
     liveUrl: "https://practica-olive-mu.vercel.app/",
   },
+  {
+    title: "projects.rc.title",
+    description: "projects.rc.description",
+    image: "/Recetario.png",
+    techStack: ["Vite", "Tailwind", "React", "Typescript", "i18n", "Prettier", "Google AI"],
+    githubUrl: "https://github.com/Fabrimonst93/recetario",
+    liveUrl: "https://recetario-4z828xote-fabrimtonst93s-projects.vercel.app",
+  },
 ]

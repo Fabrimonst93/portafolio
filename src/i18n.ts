@@ -30,6 +30,9 @@ const resources = {
       "projects.ic.title": "Instagram Clone",
       "projects.ic.description": "An Instagram cloned application with functionalities to share photos, and comment on posts.",
 
+      "projects.rc.title": "Recipe App",
+      "projects.rc.description": "A recipe application that allows users to create recipes based on ingredients they input.",
+
       code: "Code",
       live: "Visit",
 
@@ -79,6 +82,9 @@ const resources = {
       "projects.ic.title": "Clon de Instagram",
       "projects.ic.description": "Una aplicación de Instagram clonada con funcionalidades de compartir fotos, y comentar en publicaciones.",
 
+      "projects.rc.title": "Aplicación de Recetas",
+      "projects.rc.description": "Una aplicación de recetas que permite a los usuarios crear recetas basadas en los ingredientes que ingresan.",
+      
       code: "Código",
       live: "Visitar",
       
