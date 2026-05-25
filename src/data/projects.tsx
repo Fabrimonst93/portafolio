@@ -38,6 +38,6 @@ export const PROJECTS: Project[] = [
     image: "/Recetario.png",
     techStack: ["Vite", "Tailwind", "React", "Typescript", "i18n", "Prettier", "Google AI"],
     githubUrl: "https://github.com/Fabrimonst93/recetario",
-    liveUrl: "https://recetario-4z828xote-fabrimtonst93s-projects.vercel.app",
+    liveUrl: "https://recetario-4z828xote-fabrimonst93s-projects.vercel.app",
   },
 ]
