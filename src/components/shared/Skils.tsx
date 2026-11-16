@@ -7,7 +7,7 @@ const Skils = () => {
   return (
     <div id='skills' className='flex flex-col justify-center paddings items-center gap-4 scroll-mt-24'>
         <h2 className='text-5xl font-bold m-6 mb-16'>{t("techs")}</h2>
-        <div className='flex gap-16'>{SKILLS.map((skill) => (
+        <div className='flex flex-wrap justify-center gap-6 md:gap-10 lg:gap-14 max-w-5xl mx-auto'>{SKILLS.map((skill) => (
           <div key={skill.alt} className='flex flex-col items-center gap-2'>
             <div
               className={`skills-container ${skill.padding}`}

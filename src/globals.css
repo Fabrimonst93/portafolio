@@ -12,6 +12,9 @@
 
 }
 
+body {
+  position: relative;
+}
 
 @layer components{
   .paddings {
@@ -27,7 +30,7 @@
     }
 
   .name {
-    @apply font-bold text-2xl  [text-shadow:0_0_30px_white];
+    @apply font-bold text-xl  [text-shadow:0_0_30px_white] sm:text-2xl;
   }
   .nav-links {
     @apply text-white flex gap-6 font-medium hover:cursor-pointer;
@@ -41,9 +44,6 @@
     @apply absolute bottom-0 left-1/2 block w-0 h-0.5 bg-white;
     @apply transition-all duration-300 ease-out;
     @apply -translate-x-1/2; 
-  }
-  .link:hover::after {
-    @apply w-full;
   }
 
   .skills-container {

@@ -6,7 +6,7 @@ const Projects = () => {
   const { t } = useTranslation()
 
   return (
-    <div id="proyectos" className="flex flex-col justify-center items-center gap-8 scroll-mt-24 my-16 px-6 w-full max-w-6xl mx-auto">
+    <div id="projects" className="flex flex-col justify-center items-center gap-8 scroll-mt-24 my-16 px-6 w-full max-w-6xl mx-auto">
 
       <div className="text-center mb-8">
         <h2 className='text-5xl font-bold mb-8 mt-16'>{t("myProjects")}</h2>
